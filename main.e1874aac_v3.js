@@ -6492,8 +6492,10 @@
                                     children: (0, f.jsx)("button", {
                                         className: "btn",
                                         onClick: function() {
-                                            console.log("pasteIntoQuestionBox Will Run Here");
-                                            i("This is a sample Question")
+                                            google.script.run.withSuccessHandler(
+                                              function(response, element) {
+                                                i(response.text);
+                                             }).getSelectedText();
                                         },
                                         children: "Paste"
                                     })

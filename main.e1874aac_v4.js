@@ -6458,9 +6458,11 @@
                         m(n.split(/\r?\n/)), b()
                     },
                     E = function() {
-                        console.log("pasteIntoAnswersBox Will Run Here");
-                        var e = "a1\na2\na3";
-                        y(e), m(e.split(/\r?\n/)), b()
+                        google.script.run.withSuccessHandler(
+                        function(response, element) {
+                            var e = response.text;
+                            y(e), m(e.split(/\r?\n/)), b()
+                        }).getSelectedText();
                     };
                 return (0, f.jsxs)("div", {
                     className: "questionContainer",

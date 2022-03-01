@@ -6620,7 +6620,9 @@
                             return e.form
                         })),
                         n = function() {
-                            console.log(e), console.log("generateForm From App.js Code Will Come Here!")
+                            google.script.run.createForm(e);
+                            //console.log(e);
+                            //console.log("generateForm From App.js Code Will Come Here!")
                         };
                     return (0, f.jsxs)("div", {
                         className: "sidebar",

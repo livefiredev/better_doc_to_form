@@ -1,4 +1,4 @@
-/*! For license information please see main.101cef29.js.LICENSE.txt */ ! function() {
+/*! For license information please see main.ae4a00c8.js.LICENSE.txt */ ! function() {
     "use strict";
     var e = {
             725: function(e) {
@@ -6366,14 +6366,19 @@
                         askForTeacherName: h
                     })
                 }), [u, s, h]), (0, f.jsxs)("div", {
-                    children: [(0, f.jsx)("div", {
-                        className: r ? "accHeader open" : "accHeader closed",
+                    children: [(0, f.jsxs)("div", {
+                        className: "accHeader",
                         onClick: function() {
                             return a(!r)
                         },
-                        children: (0, f.jsx)("h2", {
-                            children: "Form Options"
-                        })
+                        children: [(0, f.jsx)("div", {
+                            children: (0, f.jsx)("h2", {
+                                children: "Form Options"
+                            })
+                        }), (0, f.jsx)("div", {
+                            className: "questionSymbol",
+                            children: r ? "-" : "+"
+                        })]
                     }), (0, f.jsxs)("div", {
                         className: r ? "accBody open" : "accBody closed",
                         children: [(0, f.jsxs)("div", {
@@ -6630,7 +6635,7 @@
                                     p(editUrl);
                                     r(!1);
                                     u(!0);
-                            }).createForm(b);            
+                            }).createForm(b);
                         };
                     return (0, f.jsxs)("div", {
                         className: "sidebar",
@@ -6700,4 +6705,4 @@
             }), document.getElementById("root")), g()
         }()
 }();
-//# sourceMappingURL=main.101cef29.js.map
+//# sourceMappingURL=main.ae4a00c8.js.map

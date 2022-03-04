@@ -6651,7 +6651,7 @@
                                 children: (0, f.jsx)("button", {
                                     className: "btn",
                                     onClick: function() {
-                                        window.open("https://www.youtube.com/watch?v=3qfomj2SVEI", "_blank")
+                                        window.open("https://www.youtube.com/watch?v=mdwEJUw0s1Q", "_blank")
                                     },
                                     children: "Help"
                                 })

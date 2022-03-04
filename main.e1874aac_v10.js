@@ -1,4 +1,4 @@
-/*! For license information please see main.fc9ec9f5.js.LICENSE.txt */ ! function() {
+/*! For license information please see main.101cef29.js.LICENSE.txt */ ! function() {
     "use strict";
     var e = {
             725: function(e) {
@@ -155,15 +155,15 @@
                     L = 60113,
                     O = 60120,
                     z = 60115,
-                    R = 60116,
-                    j = 60121,
+                    j = 60116,
+                    R = 60121,
                     F = 60128,
                     M = 60129,
                     I = 60130,
                     D = 60131;
                 if ("function" === typeof Symbol && Symbol.for) {
                     var U = Symbol.for;
-                    S = U("react.element"), x = U("react.portal"), E = U("react.fragment"), C = U("react.strict_mode"), _ = U("react.profiler"), N = U("react.provider"), P = U("react.context"), T = U("react.forward_ref"), L = U("react.suspense"), O = U("react.suspense_list"), z = U("react.memo"), R = U("react.lazy"), j = U("react.block"), U("react.scope"), F = U("react.opaque.id"), M = U("react.debug_trace_mode"), I = U("react.offscreen"), D = U("react.legacy_hidden")
+                    S = U("react.element"), x = U("react.portal"), E = U("react.fragment"), C = U("react.strict_mode"), _ = U("react.profiler"), N = U("react.provider"), P = U("react.context"), T = U("react.forward_ref"), L = U("react.suspense"), O = U("react.suspense_list"), z = U("react.memo"), j = U("react.lazy"), R = U("react.block"), U("react.scope"), F = U("react.opaque.id"), M = U("react.debug_trace_mode"), I = U("react.offscreen"), D = U("react.legacy_hidden")
                 }
                 var A, B = "function" === typeof Symbol && Symbol.iterator;
 
@@ -289,9 +289,9 @@
                             return n = n.displayName || n.name || "", e.displayName || ("" !== n ? "ForwardRef(" + n + ")" : "ForwardRef");
                         case z:
                             return q(e.type);
-                        case j:
-                            return q(e._render);
                         case R:
+                            return q(e._render);
+                        case j:
                             n = e._payload, e = e._init;
                             try {
                                 return q(e(n))
@@ -652,16 +652,16 @@
                     }
                 }
 
-                function Re(e, n) {
+                function je(e, n) {
                     return e(n)
                 }
 
-                function je(e, n, t, r, l) {
+                function Re(e, n, t, r, l) {
                     return e(n, t, r, l)
                 }
 
                 function Fe() {}
-                var Me = Re,
+                var Me = je,
                     Ie = !1,
                     De = !1;
 
@@ -980,15 +980,15 @@
                     Ln = Pn("animationiteration"),
                     On = Pn("animationstart"),
                     zn = Pn("transitionend"),
-                    Rn = new Map,
                     jn = new Map,
+                    Rn = new Map,
                     Fn = ["abort", "abort", Tn, "animationEnd", Ln, "animationIteration", On, "animationStart", "canplay", "canPlay", "canplaythrough", "canPlayThrough", "durationchange", "durationChange", "emptied", "emptied", "encrypted", "encrypted", "ended", "ended", "error", "error", "gotpointercapture", "gotPointerCapture", "load", "load", "loadeddata", "loadedData", "loadedmetadata", "loadedMetadata", "loadstart", "loadStart", "lostpointercapture", "lostPointerCapture", "playing", "playing", "progress", "progress", "seeking", "seeking", "stalled", "stalled", "suspend", "suspend", "timeupdate", "timeUpdate", zn, "transitionEnd", "waiting", "waiting"];
 
                 function Mn(e, n) {
                     for (var t = 0; t < e.length; t += 2) {
                         var r = e[t],
                             l = e[t + 1];
-                        l = "on" + (l[0].toUpperCase() + l.slice(1)), jn.set(r, n), Rn.set(r, l), s(l, [r])
+                        l = "on" + (l[0].toUpperCase() + l.slice(1)), Rn.set(r, n), jn.set(r, l), s(l, [r])
                     }
                 }(0, a.unstable_now)();
                 var In = 8;
@@ -1075,7 +1075,7 @@
                         a = Ie;
                     Ie = !0;
                     try {
-                        je(l, e, n, t, r)
+                        Re(l, e, n, t, r)
                     } finally {
                         (Ie = a) || Ue()
                     }
@@ -1362,12 +1362,12 @@
                         shiftKey: 0,
                         getModifierState: Pt
                     })),
-                    Rt = it(l({}, dt, {
+                    jt = it(l({}, dt, {
                         propertyName: 0,
                         elapsedTime: 0,
                         pseudoElement: 0
                     })),
-                    jt = l({}, vt, {
+                    Rt = l({}, vt, {
                         deltaX: function(e) {
                             return "deltaX" in e ? e.deltaX : "wheelDeltaX" in e ? -e.wheelDeltaX : 0
                         },
@@ -1377,7 +1377,7 @@
                         deltaZ: 0,
                         deltaMode: 0
                     }),
-                    Ft = it(jt),
+                    Ft = it(Rt),
                     Mt = [9, 13, 27, 32],
                     It = f && "CompositionEvent" in window,
                     Dt = null;
@@ -1474,7 +1474,7 @@
                         else {
                             Ie = !0;
                             try {
-                                Re(e, n)
+                                je(e, n)
                             } finally {
                                 Ie = !1, Ue()
                             }
@@ -1585,7 +1585,7 @@
                     }), n.target = br)))
                 }
                 Mn("cancel cancel click click close close contextmenu contextMenu copy copy cut cut auxclick auxClick dblclick doubleClick dragend dragEnd dragstart dragStart drop drop focusin focus focusout blur input input invalid invalid keydown keyDown keypress keyPress keyup keyUp mousedown mouseDown mouseup mouseUp paste paste pause pause play play pointercancel pointerCancel pointerdown pointerDown pointerup pointerUp ratechange rateChange reset reset seeked seeked submit submit touchcancel touchCancel touchend touchEnd touchstart touchStart volumechange volumeChange".split(" "), 0), Mn("drag drag dragenter dragEnter dragexit dragExit dragleave dragLeave dragover dragOver mousemove mouseMove mouseout mouseOut mouseover mouseOver pointermove pointerMove pointerout pointerOut pointerover pointerOver scroll scroll toggle toggle touchmove touchMove wheel wheel".split(" "), 1), Mn(Fn, 2);
-                for (var Er = "change selectionchange textInput compositionstart compositionend compositionupdate".split(" "), Cr = 0; Cr < Er.length; Cr++) jn.set(Er[Cr], 0);
+                for (var Er = "change selectionchange textInput compositionstart compositionend compositionupdate".split(" "), Cr = 0; Cr < Er.length; Cr++) Rn.set(Er[Cr], 0);
                 c("onMouseEnter", ["mouseout", "mouseover"]), c("onMouseLeave", ["mouseout", "mouseover"]), c("onPointerEnter", ["pointerout", "pointerover"]), c("onPointerLeave", ["pointerout", "pointerover"]), s("onChange", "change click focusin focusout input keydown keyup selectionchange".split(" ")), s("onSelect", "focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange".split(" ")), s("onBeforeInput", ["compositionend", "keypress", "textInput", "paste"]), s("onCompositionEnd", "compositionend focusout keydown keypress keyup mousedown".split(" ")), s("onCompositionStart", "compositionstart focusout keydown keypress keyup mousedown".split(" ")), s("onCompositionUpdate", "compositionupdate focusout keydown keypress keyup mousedown".split(" "));
                 var _r = "abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange seeked seeking stalled suspend timeupdate volumechange waiting".split(" "),
                     Nr = new Set("cancel close invalid load scroll toggle".split(" ").concat(_r));
@@ -1630,17 +1630,17 @@
                 function Lr(e, n) {
                     var t = ol(n),
                         r = e + "__bubble";
-                    t.has(r) || (jr(n, e, 2, !1), t.add(r))
+                    t.has(r) || (Rr(n, e, 2, !1), t.add(r))
                 }
                 var Or = "_reactListening" + Math.random().toString(36).slice(2);
 
                 function zr(e) {
                     e[Or] || (e[Or] = !0, u.forEach((function(n) {
-                        Nr.has(n) || Rr(n, !1, e, null), Rr(n, !0, e, null)
+                        Nr.has(n) || jr(n, !1, e, null), jr(n, !0, e, null)
                     })))
                 }
 
-                function Rr(e, n, t, r) {
+                function jr(e, n, t, r) {
                     var l = 4 < arguments.length && void 0 !== arguments[4] ? arguments[4] : 0,
                         a = t;
                     if ("selectionchange" === e && 9 !== t.nodeType && (a = t.ownerDocument), null !== r && !n && Nr.has(e)) {
@@ -1649,11 +1649,11 @@
                     }
                     var o = ol(a),
                         u = e + "__" + (n ? "capture" : "bubble");
-                    o.has(u) || (n && (l |= 4), jr(a, e, l, n), o.add(u))
+                    o.has(u) || (n && (l |= 4), Rr(a, e, l, n), o.add(u))
                 }
 
-                function jr(e, n, t, r) {
-                    var l = jn.get(n);
+                function Rr(e, n, t, r) {
+                    var l = Rn.get(n);
                     switch (void 0 === l ? 2 : l) {
                         case 0:
                             l = Gn;
@@ -1709,7 +1709,7 @@
                             l = _e(t),
                             o = [];
                         e: {
-                            var u = Rn.get(e);
+                            var u = jn.get(e);
                             if (void 0 !== u) {
                                 var i = pt,
                                     s = e;
@@ -1764,7 +1764,7 @@
                                         i = wt;
                                         break;
                                     case zn:
-                                        i = Rt;
+                                        i = jt;
                                         break;
                                     case "scroll":
                                         i = mt;
@@ -2101,8 +2101,8 @@
                     Ll = a.unstable_now,
                     Ol = a.unstable_getCurrentPriorityLevel,
                     zl = a.unstable_ImmediatePriority,
-                    Rl = a.unstable_UserBlockingPriority,
-                    jl = a.unstable_NormalPriority,
+                    jl = a.unstable_UserBlockingPriority,
+                    Rl = a.unstable_NormalPriority,
                     Fl = a.unstable_LowPriority,
                     Ml = a.unstable_IdlePriority,
                     Il = {},
@@ -2119,9 +2119,9 @@
                     switch (Ol()) {
                         case zl:
                             return 99;
-                        case Rl:
-                            return 98;
                         case jl:
+                            return 98;
+                        case Rl:
                             return 97;
                         case Fl:
                             return 96;
@@ -2137,9 +2137,9 @@
                         case 99:
                             return zl;
                         case 98:
-                            return Rl;
-                        case 97:
                             return jl;
+                        case 97:
+                            return Rl;
                         case 96:
                             return Fl;
                         case 95:
@@ -2678,7 +2678,7 @@
                     return e
                 }
 
-                function Ra(e, n) {
+                function ja(e, n) {
                     switch (fl(Oa, n), fl(La, e), fl(Ta, Pa), e = n.nodeType) {
                         case 9:
                         case 11:
@@ -2690,7 +2690,7 @@
                     cl(Ta), fl(Ta, n)
                 }
 
-                function ja() {
+                function Ra() {
                     cl(Ta), cl(La), cl(Oa)
                 }
 
@@ -2824,7 +2824,7 @@
                 }
 
                 function oo(e, n, t, r, l, a) {
-                    if (Ja = a, Za = n, n.memoizedState = null, n.updateQueue = null, n.lanes = 0, Xa.current = null === e || null === e.memoizedState ? Ro : jo, e = t(r, l), ro) {
+                    if (Ja = a, Za = n, n.memoizedState = null, n.updateQueue = null, n.lanes = 0, Xa.current = null === e || null === e.memoizedState ? jo : Ro, e = t(r, l), ro) {
                         a = 0;
                         do {
                             if (ro = !1, !(25 > a)) throw Error(o(301));
@@ -2943,7 +2943,7 @@
                 }
 
                 function ho(e, n, t, r) {
-                    var l = Ru;
+                    var l = ju;
                     if (null === l) throw Error(o(349));
                     var a = n._getVersion,
                         u = a(n._source),
@@ -3143,7 +3143,7 @@
                         useOpaqueIdentifier: lo,
                         unstable_isNewReconciler: !1
                     },
-                    Ro = {
+                    jo = {
                         readContext: oa,
                         useCallback: function(e, n) {
                             return uo().memoizedState = [e, void 0 === n ? null : n], e
@@ -3223,7 +3223,7 @@
                         },
                         unstable_isNewReconciler: !1
                     },
-                    jo = {
+                    Ro = {
                         readContext: oa,
                         useCallback: Po,
                         useContext: oa,
@@ -3397,7 +3397,7 @@
 
                 function qo(e) {
                     var n = e.stateNode;
-                    n.pendingContext ? bl(0, n.pendingContext, n.pendingContext !== n.context) : n.context && bl(0, n.context, !1), Ra(e, n.containerInfo)
+                    n.pendingContext ? bl(0, n.pendingContext, n.pendingContext !== n.context) : n.context && bl(0, n.context, !1), ja(e, n.containerInfo)
                 }
                 var Ko, Yo, Xo, Go = {
                     dehydrated: null,
@@ -3560,7 +3560,7 @@
                         case 17:
                             return gl(n.type) && yl(), null;
                         case 3:
-                            return ja(), cl(hl), cl(pl), Ya(), (r = n.stateNode).pendingContext && (r.context = r.pendingContext, r.pendingContext = null), null !== e && null !== e.child || ($a(n) ? n.flags |= 4 : r.hydrate || (n.flags |= 256)), null;
+                            return Ra(), cl(hl), cl(pl), Ya(), (r = n.stateNode).pendingContext && (r.context = r.pendingContext, r.pendingContext = null), null !== e && null !== e.child || ($a(n) ? n.flags |= 4 : r.hydrate || (n.flags |= 256)), null;
                         case 5:
                             Ma(n);
                             var a = za(Oa.current);
@@ -3705,9 +3705,9 @@
                             }
                             return null;
                         case 13:
-                            return cl(Ia), r = n.memoizedState, 0 !== (64 & n.flags) ? (n.lanes = t, n) : (r = null !== r, t = !1, null === e ? void 0 !== n.memoizedProps.fallback && $a(n) : t = null !== e.memoizedState, r && !t && 0 !== (2 & n.mode) && (null === e && !0 !== n.memoizedProps.unstable_avoidThisFallback || 0 !== (1 & Ia.current) ? 0 === Du && (Du = 3) : (0 !== Du && 3 !== Du || (Du = 4), null === Ru || 0 === (134217727 & Bu) && 0 === (134217727 & Vu) || yi(Ru, Fu))), (r || t) && (n.flags |= 4), null);
+                            return cl(Ia), r = n.memoizedState, 0 !== (64 & n.flags) ? (n.lanes = t, n) : (r = null !== r, t = !1, null === e ? void 0 !== n.memoizedProps.fallback && $a(n) : t = null !== e.memoizedState, r && !t && 0 !== (2 & n.mode) && (null === e && !0 !== n.memoizedProps.unstable_avoidThisFallback || 0 !== (1 & Ia.current) ? 0 === Du && (Du = 3) : (0 !== Du && 3 !== Du || (Du = 4), null === ju || 0 === (134217727 & Bu) && 0 === (134217727 & Vu) || yi(ju, Fu))), (r || t) && (n.flags |= 4), null);
                         case 4:
-                            return ja(), null === e && zr(n.stateNode.containerInfo), null;
+                            return Ra(), null === e && zr(n.stateNode.containerInfo), null;
                         case 10:
                             return ra(n), null;
                         case 19:
@@ -3750,7 +3750,7 @@
                             var n = e.flags;
                             return 4096 & n ? (e.flags = -4097 & n | 64, e) : null;
                         case 3:
-                            if (ja(), cl(hl), cl(pl), Ya(), 0 !== (64 & (n = e.flags))) throw Error(o(285));
+                            if (Ra(), cl(hl), cl(pl), Ya(), 0 !== (64 & (n = e.flags))) throw Error(o(285));
                             return e.flags = -4097 & n | 64, e;
                         case 5:
                             return Ma(e), null;
@@ -3759,7 +3759,7 @@
                         case 19:
                             return cl(Ia), null;
                         case 4:
-                            return ja(), null;
+                            return Ra(), null;
                         case 10:
                             return ra(e), null;
                         case 23:
@@ -4239,8 +4239,8 @@
                     Lu = k.ReactCurrentDispatcher,
                     Ou = k.ReactCurrentOwner,
                     zu = 0,
-                    Ru = null,
                     ju = null,
+                    Ru = null,
                     Fu = 0,
                     Mu = 0,
                     Iu = sl(0),
@@ -4307,7 +4307,7 @@
                 function hi(e, n, t) {
                     if (50 < ai) throw ai = 0, oi = null, Error(o(185));
                     if (null === (e = mi(e, n))) return null;
-                    Qn(e, n, t), e === Ru && (Vu |= n, 4 === Du && yi(e, Fu));
+                    Qn(e, n, t), e === ju && (Vu |= n, 4 === Du && yi(e, Fu));
                     var r = Ql();
                     1 === n ? 0 !== (8 & zu) && 0 === (48 & zu) ? bi(e) : (vi(e, t), 0 === zu && (qu(), Kl())) : (0 === (4 & zu) || 98 !== r && 99 !== r || (null === li ? li = new Set([e]) : li.add(e)), vi(e, t)), Qu = e
                 }
@@ -4333,7 +4333,7 @@
                         } else c <= n && (e.expiredLanes |= s);
                         u &= ~s
                     }
-                    if (r = Un(e, e === Ru ? Fu : 0), n = In, 0 === r) null !== t && (t !== Il && Nl(t), e.callbackNode = null, e.callbackPriority = 0);
+                    if (r = Un(e, e === ju ? Fu : 0), n = In, 0 === r) null !== t && (t !== Il && Nl(t), e.callbackNode = null, e.callbackPriority = 0);
                     else {
                         if (null !== t) {
                             if (e.callbackPriority === n) return;
@@ -4373,19 +4373,19 @@
                     if (ui = -1, si = ii = 0, 0 !== (48 & zu)) throw Error(o(327));
                     var n = e.callbackNode;
                     if (Fi() && e.callbackNode !== n) return null;
-                    var t = Un(e, e === Ru ? Fu : 0);
+                    var t = Un(e, e === ju ? Fu : 0);
                     if (0 === t) return null;
                     var r = t,
                         l = zu;
                     zu |= 16;
                     var a = _i();
-                    for (Ru === e && Fu === r || (qu(), Ei(e, r));;) try {
+                    for (ju === e && Fu === r || (qu(), Ei(e, r));;) try {
                         Ti();
                         break
                     } catch (i) {
                         Ci(e, i)
                     }
-                    if (ta(), Lu.current = a, zu = l, null !== ju ? r = 0 : (Ru = null, Fu = 0, r = Du), 0 !== (Au & Vu)) Ei(e, 0);
+                    if (ta(), Lu.current = a, zu = l, null !== Ru ? r = 0 : (ju = null, Fu = 0, r = Du), 0 !== (Au & Vu)) Ei(e, 0);
                     else if (0 !== r) {
                         if (2 === r && (zu |= 64, e.hydrate && (e.hydrate = !1, qr(e.containerInfo)), 0 !== (t = An(e)) && (r = Ni(e, t))), 1 === r) throw n = Uu, Ei(e, 0), yi(e, t), vi(e, Hl()), n;
                         switch (e.finishedWork = e.current.alternate, e.finishedLanes = t, r) {
@@ -4437,7 +4437,7 @@
 
                 function bi(e) {
                     if (0 !== (48 & zu)) throw Error(o(327));
-                    if (Fi(), e === Ru && 0 !== (e.expiredLanes & Fu)) {
+                    if (Fi(), e === ju && 0 !== (e.expiredLanes & Fu)) {
                         var n = Fu,
                             t = Ni(e, n);
                         0 !== (Au & Vu) && (t = Ni(e, n = Un(e, n)))
@@ -4477,21 +4477,21 @@
                 function Ei(e, n) {
                     e.finishedWork = null, e.finishedLanes = 0;
                     var t = e.timeoutHandle;
-                    if (-1 !== t && (e.timeoutHandle = -1, $r(t)), null !== ju)
-                        for (t = ju.return; null !== t;) {
+                    if (-1 !== t && (e.timeoutHandle = -1, $r(t)), null !== Ru)
+                        for (t = Ru.return; null !== t;) {
                             var r = t;
                             switch (r.tag) {
                                 case 1:
                                     null !== (r = r.type.childContextTypes) && void 0 !== r && yl();
                                     break;
                                 case 3:
-                                    ja(), cl(hl), cl(pl), Ya();
+                                    Ra(), cl(hl), cl(pl), Ya();
                                     break;
                                 case 5:
                                     Ma(r);
                                     break;
                                 case 4:
-                                    ja();
+                                    Ra();
                                     break;
                                 case 13:
                                 case 19:
@@ -4506,12 +4506,12 @@
                             }
                             t = t.return
                         }
-                    Ru = e, ju = $i(e.current, null), Fu = Mu = Au = n, Du = 0, Uu = null, Hu = Vu = Bu = 0
+                    ju = e, Ru = $i(e.current, null), Fu = Mu = Au = n, Du = 0, Uu = null, Hu = Vu = Bu = 0
                 }
 
                 function Ci(e, n) {
                     for (;;) {
-                        var t = ju;
+                        var t = Ru;
                         try {
                             if (ta(), Xa.current = zo, to) {
                                 for (var r = Za.memoizedState; null !== r;) {
@@ -4521,7 +4521,7 @@
                                 to = !1
                             }
                             if (Ja = 0, no = eo = Za = null, ro = !1, Ou.current = null, null === t || null === t.return) {
-                                Du = 1, Uu = n, ju = null;
+                                Du = 1, Uu = n, Ru = null;
                                 break
                             }
                             e: {
@@ -4597,7 +4597,7 @@
                             }
                             Oi(t)
                         } catch (x) {
-                            n = x, ju === t && null !== t && (ju = t = t.return);
+                            n = x, Ru === t && null !== t && (Ru = t = t.return);
                             continue
                         }
                         break
@@ -4613,27 +4613,27 @@
                     var t = zu;
                     zu |= 16;
                     var r = _i();
-                    for (Ru === e && Fu === n || Ei(e, n);;) try {
+                    for (ju === e && Fu === n || Ei(e, n);;) try {
                         Pi();
                         break
                     } catch (l) {
                         Ci(e, l)
                     }
-                    if (ta(), zu = t, Lu.current = r, null !== ju) throw Error(o(261));
-                    return Ru = null, Fu = 0, Du
+                    if (ta(), zu = t, Lu.current = r, null !== Ru) throw Error(o(261));
+                    return ju = null, Fu = 0, Du
                 }
 
                 function Pi() {
-                    for (; null !== ju;) Li(ju)
+                    for (; null !== Ru;) Li(Ru)
                 }
 
                 function Ti() {
-                    for (; null !== ju && !Pl();) Li(ju)
+                    for (; null !== Ru && !Pl();) Li(Ru)
                 }
 
                 function Li(e) {
                     var n = Ku(e.alternate, e, Mu);
-                    e.memoizedProps = e.pendingProps, null === n ? Oi(e) : ju = n, Ou.current = null
+                    e.memoizedProps = e.pendingProps, null === n ? Oi(e) : Ru = n, Ou.current = null
                 }
 
                 function Oi(e) {
@@ -4641,28 +4641,28 @@
                     do {
                         var t = n.alternate;
                         if (e = n.return, 0 === (2048 & n.flags)) {
-                            if (null !== (t = uu(t, n, Mu))) return void(ju = t);
+                            if (null !== (t = uu(t, n, Mu))) return void(Ru = t);
                             if (24 !== (t = n).tag && 23 !== t.tag || null === t.memoizedState || 0 !== (1073741824 & Mu) || 0 === (4 & t.mode)) {
                                 for (var r = 0, l = t.child; null !== l;) r |= l.lanes | l.childLanes, l = l.sibling;
                                 t.childLanes = r
                             }
                             null !== e && 0 === (2048 & e.flags) && (null === e.firstEffect && (e.firstEffect = n.firstEffect), null !== n.lastEffect && (null !== e.lastEffect && (e.lastEffect.nextEffect = n.firstEffect), e.lastEffect = n.lastEffect), 1 < n.flags && (null !== e.lastEffect ? e.lastEffect.nextEffect = n : e.firstEffect = n, e.lastEffect = n))
                         } else {
-                            if (null !== (t = iu(n))) return t.flags &= 2047, void(ju = t);
+                            if (null !== (t = iu(n))) return t.flags &= 2047, void(Ru = t);
                             null !== e && (e.firstEffect = e.lastEffect = null, e.flags |= 2048)
                         }
-                        if (null !== (n = n.sibling)) return void(ju = n);
-                        ju = n = e
+                        if (null !== (n = n.sibling)) return void(Ru = n);
+                        Ru = n = e
                     } while (null !== n);
                     0 === Du && (Du = 5)
                 }
 
                 function zi(e) {
                     var n = Ql();
-                    return $l(99, Ri.bind(null, e, n)), null
+                    return $l(99, ji.bind(null, e, n)), null
                 }
 
-                function Ri(e, n) {
+                function ji(e, n) {
                     do {
                         Fi()
                     } while (null !== ei);
@@ -4680,7 +4680,7 @@
                             c = 1 << s;
                         l[s] = 0, u[s] = -1, i[s] = -1, a &= ~c
                     }
-                    if (null !== li && 0 === (24 & r) && li.has(e) && li.delete(e), e === Ru && (ju = Ru = null, Fu = 0), 1 < t.flags ? null !== t.lastEffect ? (t.lastEffect.nextEffect = t, r = t.firstEffect) : r = t : r = t.firstEffect, null !== r) {
+                    if (null !== li && 0 === (24 & r) && li.has(e) && li.delete(e), e === ju && (Ru = ju = null, Fu = 0), 1 < t.flags ? null !== t.lastEffect ? (t.lastEffect.nextEffect = t, r = t.firstEffect) : r = t : r = t.firstEffect, null !== r) {
                         if (l = zu, zu |= 32, Ou.current = null, Br = Xn, gr(u = vr())) {
                             if ("selectionStart" in u) i = {
                                 start: u.selectionStart,
@@ -4726,7 +4726,7 @@
                         }, Xn = !1, ci = null, fi = !1, Yu = r;
                         do {
                             try {
-                                ji()
+                                Ri()
                             } catch (_) {
                                 if (null === Yu) throw Error(o(330));
                                 Ai(Yu, _), Yu = Yu.nextEffect
@@ -4813,7 +4813,7 @@
                     return 0 !== (8 & zu) || Kl(), null
                 }
 
-                function ji() {
+                function Ri() {
                     for (; null !== Yu;) {
                         var e = Yu.alternate;
                         fi || null === ci || (0 !== (8 & Yu.flags) ? en(Yu, ci) && (fi = !0) : 13 === Yu.tag && Pu(e, Yu) && en(Yu, ci) && (fi = !0));
@@ -4906,7 +4906,7 @@
 
                 function Bi(e, n, t) {
                     var r = e.pingCache;
-                    null !== r && r.delete(n), n = di(), e.pingedLanes |= e.suspendedLanes & t, Ru === e && (Fu & t) === t && (4 === Du || 3 === Du && (62914560 & Fu) === Fu && 500 > Hl() - Wu ? Ei(e, 0) : Hu |= t), vi(e, n)
+                    null !== r && r.delete(n), n = di(), e.pingedLanes |= e.suspendedLanes & t, ju === e && (Fu & t) === t && (4 === Du || 3 === Du && (62914560 & Fu) === Fu && 500 > Hl() - Wu ? Ei(e, 0) : Hu |= t), vi(e, n)
                 }
 
                 function Vi(e, n) {
@@ -4971,10 +4971,10 @@
                                 case z:
                                     u = 14;
                                     break e;
-                                case R:
+                                case j:
                                     u = 16, r = null;
                                     break e;
-                                case j:
+                                case R:
                                     u = 22;
                                     break e
                             }
@@ -5139,7 +5139,7 @@
                                         gl(n.type) && kl(n);
                                         break;
                                     case 4:
-                                        Ra(n, n.stateNode.containerInfo);
+                                        ja(n, n.stateNode.containerInfo);
                                         break;
                                     case 10:
                                         r = n.memoizedProps.value;
@@ -5228,7 +5228,7 @@
                         case 13:
                             return Jo(e, n, t);
                         case 4:
-                            return Ra(n, n.stateNode.containerInfo), r = n.pendingProps, null === e ? n.child = _a(n, null, r, t) : Do(e, n, r, t), n.child;
+                            return ja(n, n.stateNode.containerInfo), r = n.pendingProps, null === e ? n.child = _a(n, null, r, t) : Do(e, n, r, t), n.child;
                         case 11:
                             return r = n.type, l = n.pendingProps, Uo(e, n, r, l = n.elementType === r ? l : Gl(r, l), t);
                         case 7:
@@ -5337,7 +5337,7 @@
                         case "select":
                             null != (n = t.value) && oe(e, !!t.multiple, n, !1)
                     }
-                }, Re = wi, je = function(e, n, t, r, l) {
+                }, je = wi, Re = function(e, n, t, r, l) {
                     var a = zu;
                     zu |= 4;
                     try {
@@ -5908,9 +5908,9 @@
                     L = 3,
                     O = !1,
                     z = !1,
-                    R = !1;
+                    j = !1;
 
-                function j(e) {
+                function R(e) {
                     for (var n = x(N); null !== n;) {
                         if (null === n.callback) E(N);
                         else {
@@ -5922,7 +5922,7 @@
                 }
 
                 function F(e) {
-                    if (R = !1, j(e), !z)
+                    if (j = !1, R(e), !z)
                         if (null !== x(_)) z = !0, t(M);
                         else {
                             var n = x(N);
@@ -5931,15 +5931,15 @@
                 }
 
                 function M(e, t) {
-                    z = !1, R && (R = !1, l()), O = !0;
+                    z = !1, j && (j = !1, l()), O = !0;
                     var a = L;
                     try {
-                        for (j(t), T = x(_); null !== T && (!(T.expirationTime > t) || e && !n.unstable_shouldYield());) {
+                        for (R(t), T = x(_); null !== T && (!(T.expirationTime > t) || e && !n.unstable_shouldYield());) {
                             var o = T.callback;
                             if ("function" === typeof o) {
                                 T.callback = null, L = T.priorityLevel;
                                 var u = o(T.expirationTime <= t);
-                                t = n.unstable_now(), "function" === typeof u ? T.callback = u : T === x(_) && E(_), j(t)
+                                t = n.unstable_now(), "function" === typeof u ? T.callback = u : T === x(_) && E(_), R(t)
                             } else E(_);
                             T = x(_)
                         }
@@ -6022,7 +6022,7 @@
                         startTime: o,
                         expirationTime: i = o + i,
                         sortIndex: -1
-                    }, o > u ? (e.sortIndex = o, S(N, e), null === x(_) && e === x(N) && (R ? l() : R = !0, r(F, o - u))) : (e.sortIndex = i, S(_, e), z || O || (z = !0, t(M))), e
+                    }, o > u ? (e.sortIndex = o, S(N, e), null === x(_) && e === x(N) && (j ? l() : j = !0, r(F, o - u))) : (e.sortIndex = i, S(_, e), z || O || (z = !0, t(M))), e
                 }, n.unstable_wrapCallback = function(e) {
                     var n = L;
                     return function() {
@@ -6437,28 +6437,31 @@
                 (0, e.useEffect)((function() {
                     b()
                 }), [u, r, c, h, g]);
-                var w, k, S = function(e) {
+                var w = function(e) {
                         y(e.target.value);
                         var n = e.target.value;
                         m(n.split(/\r?\n/)), b()
                     },
-                    x = function(e) {
-                        google.script.run.withSuccessHandler(
-                            function(response, element) {
-                                var e = response.text;
-                                y(e), m(e.split(/\r?\n/)), b()
-                        }).getSelectedText();
+                    k = function(e) {
+                        e.preventDefault(), console.log("pasteIntoAnswersBox Will Run Here");
+                        var n = "a1\na2\na3";
+                        y(n), m(n.split(/\r?\n/)), b()
                     };
                 return (0, f.jsxs)("div", {
                     className: "questionContainer",
-                    children: [(0, f.jsx)("div", {
-                        className: r ? "accHeader open" : "accHeader closed",
+                    children: [(0, f.jsxs)("div", {
+                        className: "accHeader",
                         onClick: function() {
                             return a(!r)
                         },
-                        children: (0, f.jsx)("h2", {
-                            children: "" == u ? "Question" : (w = u, k = 40, w.length > k ? w.slice(0, k) + "..." : w)
-                        })
+                        children: [(0, f.jsx)("div", {
+                            children: (0, f.jsx)("h2", {
+                                children: "" == u ? "Question" : u
+                            })
+                        }), (0, f.jsx)("div", {
+                            className: "questionSymbol",
+                            children: r ? "-" : "+"
+                        })]
                     }), (0, f.jsxs)("div", {
                         className: r ? "accBody open" : "accBody closed",
                         children: [(0, f.jsx)("div", {
@@ -6516,11 +6519,11 @@
                                 className: "pasteLabel",
                                 children: (0, f.jsx)("a", {
                                     href: "#",
-                                    onClick: x,
+                                    onClick: k,
                                     children: "Paste Answers"
                                 })
                             }), (0, f.jsx)("textarea", {
-                                onChange: S,
+                                onChange: w,
                                 placeholder: "Put each choice in a new line",
                                 value: g
                             })]
@@ -6625,7 +6628,7 @@
                                     p(editUrl);
                                     r(!1);
                                     u(!0);
-                            }).createForm(b);
+                            }).createForm(b);            
                         };
                     return (0, f.jsxs)("div", {
                         className: "sidebar",
@@ -6695,4 +6698,4 @@
             }), document.getElementById("root")), g()
         }()
 }();
-//# sourceMappingURL=main.fc9ec9f5.js.map
+//# sourceMappingURL=main.101cef29.js.map

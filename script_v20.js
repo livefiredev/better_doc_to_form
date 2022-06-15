@@ -6691,7 +6691,7 @@
                             }), (0, f.jsxs)("div", {
                                 className: "buyMeACofffeSection",
                                 children: [(0, f.jsx)("a", {
-                                    href: "https://www.buymeacoffee.com/khojbadami",
+                                    href: "https://livefiredev.com/buymeacoffee",
                                     target: "_blank",
                                     children: "Click Here To Buy Me A Coffe!"
                                 }), (0, f.jsx)("br", {}), "Dont worry! It will open in a new window. Nothing will be disturbed!"]
